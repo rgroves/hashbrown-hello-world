@@ -1,10 +1,14 @@
 import "./App.css";
+import Chat from "./components/Chat";
 
 function App() {
   return (
     <>
       <h1>Hashbrown</h1>
-      <div></div>
+      <div>
+        <h2>Chat Component</h2>
+        <Chat />
+      </div>
     </>
   );
 }
