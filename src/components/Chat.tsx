@@ -35,12 +35,14 @@ export default function Chat() {
       >
         Yes, fry it up!
       </button>
-      {messages.map(
-        (message, i) =>
-          message.role == "assistant" && (
-            <p key={i}>{JSON.stringify(message.content)}</p>
-          )
-      )}
+      <div className="lowdown">
+        {messages.map(
+          (message, i) =>
+            message.role == "assistant" && (
+              <p key={i}>{message.content as string}</p>
+            )
+        )}
+      </div>
     </>
   );
 }
